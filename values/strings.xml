@@ -12,19 +12,6 @@
     <string name="category_numbers">Numbers</string>
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_family">Family Members</string>
+    <string name="category_family">Family</string>
 
-    <!-- Category name for the vocabulary words for test -->
-    <string name="category_test">Test</string>
-
-    <string-array name="test">
-        <item>test1</item>
-        <item>test2</item>
-    </string-array>
-
-    <string-array name="family_list">
-        <item>father</item>
-        <item>mother</item>
-        <item></item>
-    </string-array>
 </resources>
