@@ -1,52 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/tan_background"
+    android:background="@color/primary_color"
     android:orientation="vertical"
     tools:context="com.example.android.miwok.MainActivity">
 
-    <TextView
-        android:id="@+id/numbers"
-        style="@style/CategoryStyle"
-        android:background="@drawable/category_numbers_ripple_effect"
-        android:text="@string/category_numbers"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        style="@style/CategoryTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/family"
-        style="@style/CategoryStyle"
-        android:background="@drawable/category_family_ripple_effect"
-        android:onClick="openFamilyList"
-        android:text="@string/category_family" />
+    </android.support.design.widget.TabLayout>
 
-    <TextView
-        android:id="@+id/colors"
-        style="@style/CategoryStyle"
-        android:background="@drawable/category_colors_ripple_effect"
-        android:onClick="openColorsList"
-        android:text="@string/category_colors" />
-
-    <TextView
-        android:id="@+id/phrases"
-        style="@style/CategoryStyle"
-        android:background="@drawable/category_phrases_ripple_effect"
-        android:onClick="openPhrasesList"
-        android:text="@string/category_phrases" />
-
-    <TextView
-        android:id="@+id/test"
-        style="@style/CategoryStyle"
-        android:background="@drawable/test_ripple_effect"
-        android:onClick="openTestList"
-        android:text="@string/category_test"/>
-
-    <TextView
-        android:id="@+id/tasty"
-        style="@style/CategoryStyle"
-        android:background="@color/category_test"
-        android:onClick="openTastyList"
-        android:text="Tasty"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
 
 </LinearLayout>
